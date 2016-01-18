@@ -1,0 +1,2 @@
+module SubarticlesHelper
+end

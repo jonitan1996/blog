@@ -1,0 +1,4 @@
+
+
+<%= link_to_unless current_page.last?, fa_icon("fa-chevron-right", text: "", class: "fa fa-chevron-right")   , url, :remote => remote do |name| -%><span class="disabled">
+<%= name %></span><% end -%>

@@ -1,0 +1,27 @@
+<%= form_for :subarticle, url: subarticles_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+<p>
+
+
+<select  multiple="multiple" name="area[]">
+<% @articles.each do |article| %>
+<option value=<%=article.id%>><%= article.title %></option>
+<% end%>
+</select>
+
+
+</p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

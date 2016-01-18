@@ -1,0 +1,27 @@
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+ 
+  <p>
+    <%= label_tag(:fecha, "Search for:") %>
+    <%= date_field_tag(:fecha)%>
+  </p>
+   <%= submit_tag("Search") %>
+<% end %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="0"></th>
+  </tr>
+
+<% @busqueda.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.id %></td>
+   
+  </tr>
+  <
+  <% end %>
+</table>

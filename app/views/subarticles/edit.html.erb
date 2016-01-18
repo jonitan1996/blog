@@ -1,0 +1,30 @@
+<h1>Editing Subarticle</h1>
+ 
+<%= form_for :subarticle, url: subarticle_path(@subarticle), method: :patch do |f| %>
+  <% if @subarticle.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@subarticle.errors.count, "error") %> prohibited
+      this subarticle from being saved:</h2>
+    <ul>
+    <% @subarticle.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Back', articles_path %>

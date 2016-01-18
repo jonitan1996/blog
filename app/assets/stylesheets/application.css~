@@ -1,0 +1,25 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *=require font-awesome
+ */
+
+h1 {font-size:45px; background-color: yellow; }
+.link1{color:#ff6600;}
+.link1{color:#ff1166;}
+.pagination{padding:.3em;margin:.3em; font-family: Roboto,Arial,"Helvetica Neue",Helvetica,sans-serif; font-size: 14px;}
+.pagination a{padding:.1em .3em;margin:.2em;border:1px solid #003399;text-decoration:none;color:#003399;}
+.pagination a:hover,.pagination a:active{border:1px solid #ff6600;color:#ff6600;}
+.pagination span.current{padding:.1em .3em;margin:.2em;border:1px solid #369;font-weight:bold;background-color:#369;color:#FFF;}
+.pagination span.disabled{padding:.1em .3em;margin:.2em;border:1px solid #eee;color:#ddd;}
